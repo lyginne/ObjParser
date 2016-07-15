@@ -6,7 +6,7 @@ Simply parses .obj files and putting it into c arrays grouping by materials.
 Curent directory where parser is launching should contain at least directory named "source" with .obj files in it. 
 Launch it with "fileName" paramener, it will search for source/fileName.obj file and will create target/fileName.c file and target/fileName.h file
 #Known issues
--If target file names contains some characters, that is forbidden for variable name characters in C - code just creates C code with error, i.e. just doing nothing
+-If target file names contains some characters, that is forbidden for variable name characters in C - code just creates C code with error, in other words - code won't anyhow validate generated C variable names
 
 -If .obj file name contains faces with more than 4 vertices - code can't parse it
 
